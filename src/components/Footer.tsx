@@ -1,4 +1,4 @@
-import swadoosLogo from "@/assets/swadoos-logo.png";
+import platformLogo from "@/assets/platform-logo.png";
 
 export function Footer() {
   return (
@@ -8,15 +8,15 @@ export function Footer() {
           {/* Brand Section */}
           <div className="md:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
-              <img src={swadoosLogo} alt="Swadoos Logo" className="h-10 w-10" />
+              <img src={platformLogo} alt="Swadoos Food Delivery Platform Logo" className="h-10 w-10" />
               <div>
                 <h3 className="text-xl font-bold">Swadoos</h3>
-                <p className="text-sm opacity-75">Directly from Maa's Kitchen</p>
+                <p className="text-sm opacity-75">Your Favorite Restaurants</p>
               </div>
             </div>
             <p className="text-sm opacity-75 leading-relaxed mb-4">
-              Bringing the warmth and authenticity of home-cooked meals to families across Hyderabad. 
-              Every dish made with love, care, and traditional recipes.
+              Hyderabad's leading food delivery platform connecting you with 500+ restaurants. 
+              From local favorites to popular chains - discover, order, and enjoy the best food in the city.
             </p>
             <p className="text-xs opacity-60">
               © 2024 Swadoos. All rights reserved.
@@ -27,10 +27,11 @@ export function Footer() {
           <div>
             <h4 className="font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#about" className="opacity-75 hover:opacity-100 transition-opacity">About Us</a></li>
-              <li><a href="#menu" className="opacity-75 hover:opacity-100 transition-opacity">Menu Highlights</a></li>
+              <li><a href="#about" className="opacity-75 hover:opacity-100 transition-opacity">About Platform</a></li>
+              <li><a href="#menu" className="opacity-75 hover:opacity-100 transition-opacity">Popular Restaurants</a></li>
               <li><a href="#coverage" className="opacity-75 hover:opacity-100 transition-opacity">Delivery Areas</a></li>
               <li><a href="#contact" className="opacity-75 hover:opacity-100 transition-opacity">Contact Us</a></li>
+              <li><span className="opacity-75">Restaurant Partners</span></li>
               <li><span className="opacity-75">Privacy Policy</span></li>
               <li><span className="opacity-75">Terms of Service</span></li>
             </ul>
@@ -44,11 +45,12 @@ export function Footer() {
                 📱 Download our mobile app to:
               </p>
               <ul className="text-xs opacity-75 space-y-1 ml-4">
-                <li>• Browse our complete menu</li>
-                <li>• Place orders quickly</li>
-                <li>• Track delivery in real-time</li>
+                <li>• Browse 500+ restaurants</li>
+                <li>• Filter by cuisine & price</li>
+                <li>• Track orders in real-time</li>
                 <li>• Earn loyalty rewards</li>
-                <li>• Get exclusive offers</li>
+                <li>• Get exclusive restaurant offers</li>
+                <li>• Read reviews & ratings</li>
               </ul>
               <div className="pt-2">
                 <p className="text-xs opacity-60 italic">
@@ -63,10 +65,12 @@ export function Footer() {
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm opacity-75 text-center md:text-left">
-              Made with ❤️ for food lovers in Hyderabad
+              Connecting Hyderabad with amazing food experiences 🍴
             </p>
             <div className="flex items-center gap-4 text-xs opacity-60">
               <span>support@swadoos.com</span>
+              <span>•</span>
+              <span>partners@swadoos.com</span>
               <span>•</span>
               <span>+91 9876543210</span>
             </div>

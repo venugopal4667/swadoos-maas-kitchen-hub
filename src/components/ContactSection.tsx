@@ -10,7 +10,7 @@ export function ContactSection() {
             Get in <span className="bg-gradient-primary bg-clip-text text-transparent">Touch</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have questions? We're here to help! Reach out to us anytime.
+            Need help with orders, restaurant partnerships, or general questions? We're here to help!
           </p>
         </div>
 
@@ -36,7 +36,7 @@ export function ContactSection() {
                   <Mail className="w-6 h-6 text-accent" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-foreground mb-1">Email Us</h3>
+                  <h3 className="font-bold text-foreground mb-1">General Inquiries</h3>
                   <p className="text-muted-foreground mb-2">support@swadoos.com</p>
                   <p className="text-sm text-muted-foreground">We'll respond within 24 hours</p>
                 </div>
@@ -49,9 +49,9 @@ export function ContactSection() {
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-foreground mb-1">Kitchen Location</h3>
-                  <p className="text-muted-foreground mb-2">Hyderabad, Telangana</p>
-                  <p className="text-sm text-muted-foreground">Certified hygienic kitchen facilities</p>
+                  <h3 className="font-bold text-foreground mb-1">Restaurant Partnerships</h3>
+                  <p className="text-muted-foreground mb-2">partners@swadoos.com</p>
+                  <p className="text-sm text-muted-foreground">Join our platform as a restaurant partner</p>
                 </div>
               </div>
             </div>
@@ -62,9 +62,9 @@ export function ContactSection() {
                   <Clock className="w-6 h-6 text-accent" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-foreground mb-1">Service Hours</h3>
-                  <p className="text-muted-foreground mb-2">11:00 AM - 11:00 PM</p>
-                  <p className="text-sm text-muted-foreground">All days of the week</p>
+                  <h3 className="font-bold text-foreground mb-1">Platform Hours</h3>
+                  <p className="text-muted-foreground mb-2">6:00 AM - 12:00 AM</p>
+                  <p className="text-sm text-muted-foreground">Restaurant availability varies</p>
                 </div>
               </div>
             </div>
@@ -76,7 +76,7 @@ export function ContactSection() {
               <MessageCircle className="w-16 h-16 mx-auto mb-4 opacity-90" />
               <h3 className="text-2xl font-bold mb-4">Need Immediate Help?</h3>
               <p className="mb-6 opacity-90">
-                For quick support with your orders, complaints, or queries, 
+                For quick support with orders, delivery tracking, or restaurant queries, 
                 contact us directly through our mobile app's chat feature.
               </p>
               <Button variant="app-download" size="lg" className="mb-4">
