@@ -1,12 +1,38 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { HeroSection } from "@/components/HeroSection";
+import { AboutSection } from "@/components/AboutSection";
+import { MenuHighlights } from "@/components/MenuHighlights";
+import { CoverageSection } from "@/components/CoverageSection";
+import { ContactSection } from "@/components/ContactSection";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <HeroSection />
+
+      {/* About Section */}
+      <section id="about">
+        <AboutSection />
+      </section>
+
+      {/* Menu Highlights */}
+      <section id="menu">
+        <MenuHighlights />
+      </section>
+
+      {/* Coverage Area */}
+      <section id="coverage">
+        <CoverageSection />
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact">
+        <ContactSection />
+      </section>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
