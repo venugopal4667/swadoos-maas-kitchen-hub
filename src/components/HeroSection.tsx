@@ -2,6 +2,45 @@ import { Button } from "@/components/ui/button";
 import { Smartphone, PlayCircle, Store, Users, Clock } from "lucide-react";
 import platformHero from "@/assets/platform-hero.jpg";
 import platformLogo from "@/assets/platform-logo.png";
+import bannerBiryani from "@/assets/banner-biryani.jpg";
+import bannerPizza from "@/assets/banner-pizza.jpg";
+import bannerBurger from "@/assets/banner-burger.jpg";
+import bannerChinese from "@/assets/banner-chinese.jpg";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+
+const banners = [
+  {
+    image: bannerBiryani,
+    alt: "Authentic Biryani from top restaurants - Order now on Swadoos",
+    title: "Craving Biryani?",
+    subtitle: "Order from the best biryani spots in Hyderabad"
+  },
+  {
+    image: bannerPizza,
+    alt: "Fresh Pizza delivery from Italian restaurants on Swadoos",
+    title: "Pizza Party Time!",
+    subtitle: "Hot & fresh pizzas delivered to your doorstep"
+  },
+  {
+    image: bannerBurger,
+    alt: "Gourmet Burgers from top burger joints - Swadoos delivery",
+    title: "Burger Bonanza",
+    subtitle: "Juicy burgers that hit the spot every time"
+  },
+  {
+    image: bannerChinese,
+    alt: "Authentic Chinese cuisine delivery on Swadoos platform",
+    title: "Chinese Delights",
+    subtitle: "Experience authentic flavors from the East"
+  }
+];
 
 export function HeroSection() {
   return (
@@ -27,8 +66,50 @@ export function HeroSection() {
         </div>
       </nav>
 
+      {/* Hero Banners Carousel */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 mt-8">
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          plugins={[
+            Autoplay({
+              delay: 4000,
+            }),
+          ]}
+          className="w-full"
+        >
+          <CarouselContent>
+            {banners.map((banner, index) => (
+              <CarouselItem key={index}>
+                <div className="relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-glow">
+                  <img
+                    src={banner.image}
+                    alt={banner.alt}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/50 to-transparent flex items-center">
+                    <div className="px-8 md:px-16 max-w-2xl">
+                      <h3 className="text-3xl md:text-5xl font-bold text-foreground mb-3 animate-fade-in">
+                        {banner.title}
+                      </h3>
+                      <p className="text-lg md:text-xl text-muted-foreground animate-fade-in [animation-delay:200ms]">
+                        {banner.subtitle}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-4" />
+          <CarouselNext className="right-4" />
+        </Carousel>
+      </div>
+
       {/* Hero Content */}
-      <main className="relative z-10 flex items-center justify-center min-h-[calc(100vh-120px)] px-6">
+      <main className="relative z-10 flex items-center justify-center px-6 py-12">
         <div className="text-center max-w-4xl mx-auto">
           <div className="animate-fade-in">
             <h2 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
