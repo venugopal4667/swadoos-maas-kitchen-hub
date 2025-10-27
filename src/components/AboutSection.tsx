@@ -25,13 +25,13 @@ export function AboutSection() {
               Why Choose Swadoos Platform
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              We've carefully curated the finest restaurants and eateries across Hyderabad to bring you 
-              an unmatched variety of cuisines and dining experiences, all at your fingertips. From local 
-              family-owned gems to popular restaurant chains.
+              We've carefully curated homemade cloud kitchens across Hyderabad to bring you 
+              authentic, traditional food prepared fresh with love and care. No junk food, no frozen meals, 
+              no harmful additives - just pure, homemade goodness.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Our platform ensures quality, reliability, and convenience - making food ordering as simple 
-              as a few taps on your phone while maintaining the highest standards of food safety and delivery.
+              Our platform connects you with trusted cloud kitchens that cook on order, ensuring quality, 
+              freshness, and the authentic taste of home-cooked meals with <strong className="text-primary">FREE delivery on every order</strong>.
             </p>
           </div>
 
@@ -40,8 +40,8 @@ export function AboutSection() {
               <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Store className="w-6 h-6 text-primary" />
               </div>
-              <h4 className="font-semibold text-foreground mb-2">500+ Restaurants</h4>
-              <p className="text-sm text-muted-foreground">Curated selection of the best local and chain restaurants</p>
+              <h4 className="font-semibold text-foreground mb-2">Top Cloud Kitchens</h4>
+              <p className="text-sm text-muted-foreground">Homemade food from trusted cloud kitchens in Hyderabad</p>
             </div>
 
             <div className="bg-card rounded-xl p-6 shadow-soft hover:shadow-glow transition-smooth animate-scale-in [animation-delay:100ms]">
@@ -56,8 +56,8 @@ export function AboutSection() {
               <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Clock className="w-6 h-6 text-primary" />
               </div>
-              <h4 className="font-semibold text-foreground mb-2">Fast Delivery</h4>
-              <p className="text-sm text-muted-foreground">Average 30-minute delivery across the city</p>
+              <h4 className="font-semibold text-foreground mb-2">FREE Delivery</h4>
+              <p className="text-sm text-muted-foreground">Slot-based delivery system with no delivery charges</p>
             </div>
 
             <div className="bg-card rounded-xl p-6 shadow-soft hover:shadow-glow transition-smooth animate-scale-in [animation-delay:300ms]">
@@ -65,7 +65,7 @@ export function AboutSection() {
                 <Shield className="w-6 h-6 text-accent" />
               </div>
               <h4 className="font-semibold text-foreground mb-2">Quality Assured</h4>
-              <p className="text-sm text-muted-foreground">Hygiene certified restaurants with quality checks</p>
+              <p className="text-sm text-muted-foreground">Hygiene certified cloud kitchens with quality checks</p>
             </div>
           </div>
         </div>

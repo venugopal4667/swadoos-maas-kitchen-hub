@@ -2,10 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Smartphone, PlayCircle, Store, Users, Clock } from "lucide-react";
 import platformHero from "@/assets/platform-hero.jpg";
 import platformLogo from "@/assets/platform-logo.png";
-import bannerBiryani from "@/assets/banner-biryani.jpg";
-import bannerPizza from "@/assets/banner-pizza.jpg";
-import bannerBurger from "@/assets/banner-burger.jpg";
-import bannerChinese from "@/assets/banner-chinese.jpg";
+import bannerCloudKitchen from "@/assets/banner-cloud-kitchen.jpg";
 import {
   Carousel,
   CarouselContent,
@@ -17,28 +14,10 @@ import Autoplay from "embla-carousel-autoplay";
 
 const banners = [
   {
-    image: bannerBiryani,
-    alt: "Authentic Biryani from top restaurants - Order now on Swadoos",
-    title: "Craving Biryani?",
-    subtitle: "Order from the best biryani spots in Hyderabad"
-  },
-  {
-    image: bannerPizza,
-    alt: "Fresh Pizza delivery from Italian restaurants on Swadoos",
-    title: "Pizza Party Time!",
-    subtitle: "Hot & fresh pizzas delivered to your doorstep"
-  },
-  {
-    image: bannerBurger,
-    alt: "Gourmet Burgers from top burger joints - Swadoos delivery",
-    title: "Burger Bonanza",
-    subtitle: "Juicy burgers that hit the spot every time"
-  },
-  {
-    image: bannerChinese,
-    alt: "Authentic Chinese cuisine delivery on Swadoos platform",
-    title: "Chinese Delights",
-    subtitle: "Experience authentic flavors from the East"
+    image: bannerCloudKitchen,
+    alt: "Authentic homemade food from cloud kitchens - Swadoos delivery platform",
+    title: "Skip the Junk, Choose Authentic",
+    subtitle: "Homemade food from trusted cloud kitchens - Fresh, healthy, and made with love"
   }
 ];
 
@@ -113,15 +92,15 @@ export function HeroSection() {
         <div className="text-center max-w-4xl mx-auto">
           <div className="animate-fade-in">
             <h2 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
-              Your Favorite
+              Authentic Homemade Food
               <br />
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                Restaurants Delivered
+                Directly from Cloud Kitchens
               </span>
             </h2>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-              Discover hundreds of restaurants in Hyderabad. From local gems to popular chains - all in one app
+              Say goodbye to junk food and frozen meals. Get fresh, authentic homemade food with <strong className="text-primary">FREE delivery</strong>
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -138,7 +117,7 @@ export function HeroSection() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto mb-8">
               <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
                 <Store className="w-4 h-4 text-primary" />
-                <span>500+ Restaurants</span>
+                <span>Top Homemade Cloud Kitchens</span>
               </div>
               <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
                 <Users className="w-4 h-4 text-accent" />
@@ -146,12 +125,12 @@ export function HeroSection() {
               </div>
               <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
                 <Clock className="w-4 h-4 text-primary" />
-                <span>30 Min Average Delivery</span>
+                <span>Slot-based Delivery - No Fees!</span>
               </div>
             </div>
 
             <div className="text-sm text-muted-foreground">
-              <p>🍽️ All ordering & payments through our mobile app only</p>
+              <p>🍽️ All ordering & payments through our mobile app only • <strong className="text-primary">FREE Delivery Always</strong></p>
             </div>
           </div>
         </div>
