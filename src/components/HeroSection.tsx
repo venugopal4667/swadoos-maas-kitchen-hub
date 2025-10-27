@@ -3,6 +3,9 @@ import { Smartphone, PlayCircle, Store, Users, Clock } from "lucide-react";
 import platformHero from "@/assets/platform-hero.jpg";
 import platformLogo from "@/assets/platform-logo.png";
 import bannerCloudKitchen from "@/assets/banner-cloud-kitchen.jpg";
+import bannerHomemadeThali from "@/assets/banner-homemade-thali.jpg";
+import bannerFreshIngredients from "@/assets/banner-fresh-ingredients.jpg";
+import bannerCookingLove from "@/assets/banner-cooking-love.jpg";
 import {
   Carousel,
   CarouselContent,
@@ -18,6 +21,24 @@ const banners = [
     alt: "Authentic homemade food from cloud kitchens - Swadoos delivery platform",
     title: "Skip the Junk, Choose Authentic",
     subtitle: "Homemade food from trusted cloud kitchens - Fresh, healthy, and made with love"
+  },
+  {
+    image: bannerHomemadeThali,
+    alt: "Traditional homemade thali with dal, roti, and vegetables - Swadoos",
+    title: "Complete Homestyle Meals",
+    subtitle: "Authentic thalis prepared fresh just like home - No frozen, no junk"
+  },
+  {
+    image: bannerFreshIngredients,
+    alt: "Fresh organic ingredients and traditional spices - Swadoos quality",
+    title: "100% Natural Ingredients",
+    subtitle: "No MSG, no preservatives - Only fresh, healthy ingredients"
+  },
+  {
+    image: bannerCookingLove,
+    alt: "Chefs preparing food with love in cloud kitchen - Swadoos",
+    title: "Cooked Fresh, Served Hot",
+    subtitle: "Every meal prepared on order with care and tradition"
   }
 ];
 
