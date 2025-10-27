@@ -121,7 +121,7 @@ export function HeroSection() {
             </h2>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-              Say goodbye to junk food and frozen meals. Get fresh, authentic homemade food with <strong className="text-primary">FREE delivery</strong>
+              Say goodbye to junk food and frozen meals. Get fresh, authentic homemade food with <strong className="text-primary">minimal delivery fees</strong>
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -146,12 +146,12 @@ export function HeroSection() {
               </div>
               <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
                 <Clock className="w-4 h-4 text-primary" />
-                <span>Slot-based Delivery - No Fees!</span>
+                <span>Slot-based - Low Delivery Fee</span>
               </div>
             </div>
 
             <div className="text-sm text-muted-foreground">
-              <p>🍽️ All ordering & payments through our mobile app only • <strong className="text-primary">FREE Delivery Always</strong></p>
+              <p>🍽️ All ordering & payments through our mobile app only • <strong className="text-primary">Low Delivery Fee</strong></p>
             </div>
           </div>
         </div>

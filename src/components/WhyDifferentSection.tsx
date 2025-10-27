@@ -34,8 +34,8 @@ export function WhyDifferentSection() {
     },
     {
       icon: CheckCircle,
-      title: "Free Delivery, Always",
-      description: "Enjoy free delivery on all orders — because good food should be accessible to everyone.",
+      title: "Minimal Delivery Fees",
+      description: "Enjoy low delivery charges on all orders — because good food should be accessible to everyone.",
       color: "text-primary"
     }
   ];

@@ -31,7 +31,7 @@ export function AboutSection() {
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Our platform connects you with trusted cloud kitchens that cook on order, ensuring quality, 
-              freshness, and the authentic taste of home-cooked meals with <strong className="text-primary">FREE delivery on every order</strong>.
+              freshness, and the authentic taste of home-cooked meals with <strong className="text-primary">minimal delivery fees</strong>.
             </p>
           </div>
 
@@ -56,8 +56,8 @@ export function AboutSection() {
               <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Clock className="w-6 h-6 text-primary" />
               </div>
-              <h4 className="font-semibold text-foreground mb-2">FREE Delivery</h4>
-              <p className="text-sm text-muted-foreground">Slot-based delivery system with no delivery charges</p>
+              <h4 className="font-semibold text-foreground mb-2">Low Delivery Fee</h4>
+              <p className="text-sm text-muted-foreground">Slot-based delivery with minimal charges</p>
             </div>
 
             <div className="bg-card rounded-xl p-6 shadow-soft hover:shadow-glow transition-smooth animate-scale-in [animation-delay:300ms]">
