@@ -6,32 +6,32 @@ export function AboutSection() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Food Should Nourish 
-            <span className="bg-gradient-primary bg-clip-text text-transparent"> Your Soul</span>
+            Real Food, Made with
+            <span className="bg-gradient-primary bg-clip-text text-transparent"> Real Care</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-6">
-            Tired of junk food, frozen meals, or chemical-filled restaurant dishes? 
-            Done with prices higher than restaurant menus?
+            Tired of heavily processed meals, artificial flavors, and sky-high delivery charges? 
+            Missing the comfort of home-style cooking that actually tastes authentic?
           </p>
           <p className="text-xl font-semibold text-foreground max-w-3xl mx-auto">
-            We get it. That's why we created Swadoos — bringing you the authentic taste of 
-            traditional, homemade food through our network of cloud kitchens.
+            Swadoos connects you with skilled home chefs operating dedicated kitchens across Hyderabad. 
+            Each meal is prepared fresh to order, capturing the essence of traditional recipes passed down through generations.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="animate-fade-in">
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-              Why Choose Swadoos Platform
+              The Swadoos Difference
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              We've carefully curated homemade cloud kitchens across Hyderabad to bring you 
-              authentic, traditional food prepared fresh with love and care. No junk food, no frozen meals, 
-              no harmful additives - just pure, homemade goodness.
+              We've partnered with passionate home chefs who run their own professional kitchens throughout Hyderabad. 
+              Every dish is made from scratch using fresh ingredients and time-honored cooking methods. 
+              Say goodbye to preservatives, MSG, and reheated leftovers.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Our platform connects you with trusted cloud kitchens that cook on order, ensuring quality, 
-              freshness, and the authentic taste of home-cooked meals with <strong className="text-primary">minimal delivery fees</strong>.
+              Our slot-based delivery system keeps costs low, so you can enjoy restaurant-quality food made with 
+              the care of home cooking, all while paying <strong className="text-primary">minimal delivery fees</strong>.
             </p>
           </div>
 
