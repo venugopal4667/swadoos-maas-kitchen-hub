@@ -24,7 +24,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-bold text-foreground mb-1">Customer Support</h3>
-                  <p className="text-muted-foreground mb-2">+91 9876543210</p>
+                  <p className="text-muted-foreground mb-2">+91 9121642407</p>
                   <p className="text-sm text-muted-foreground">Mon-Sun, 8:00 AM - 11:00 PM</p>
                 </div>
               </div>
