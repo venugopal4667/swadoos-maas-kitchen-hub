@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Smartphone, PlayCircle, Store, Users, Clock } from "lucide-react";
 import platformHero from "@/assets/platform-hero.jpg";
-import platformLogo from "@/assets/platform-logo.png";
+import swadoosLogo from "@/assets/swadoos-logo.png";
 import bannerCloudKitchen from "@/assets/banner-cloud-kitchen.jpg";
 import bannerHomemadeThali from "@/assets/banner-homemade-thali.jpg";
 import bannerFreshIngredients from "@/assets/banner-fresh-ingredients.jpg";
@@ -58,7 +58,7 @@ export function HeroSection() {
       {/* Navigation */}
       <nav className="relative z-10 flex items-center justify-between p-6 max-w-7xl mx-auto">
         <div className="flex items-center space-x-3">
-          <img src={platformLogo} alt="Swadoos Food Delivery Platform Logo" className="h-12 w-12 animate-float" />
+          <img src={swadoosLogo} alt="Swadoos Food Delivery Platform Logo" className="h-12 w-12 animate-float" />
           <div>
             <h1 className="text-2xl font-bold text-foreground">Swadoos</h1>
             <p className="text-sm text-muted-foreground">Your Favorite Restaurants</p>
