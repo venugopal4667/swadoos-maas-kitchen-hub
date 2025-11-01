@@ -1,4 +1,5 @@
-import platformLogo from "@/assets/platform-logo.png";
+import { Link } from "react-router-dom";
+import swadoosLogo from "@/assets/swadoos-logo.png";
 
 export function Footer() {
   return (
@@ -7,13 +8,13 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand Section */}
           <div className="md:col-span-1">
-            <div className="flex items-center space-x-3 mb-4">
-              <img src={platformLogo} alt="Swadoos Food Delivery Platform Logo" className="h-10 w-10" />
+            <Link to="/" className="flex items-center space-x-3 mb-4">
+              <img src={swadoosLogo} alt="Swadoos Food Delivery Platform Logo" className="h-10 w-10" />
               <div>
                 <h3 className="text-xl font-bold">Swadoos</h3>
                 <p className="text-sm opacity-75">Your Favorite Restaurants</p>
               </div>
-            </div>
+            </Link>
             <p className="text-sm opacity-75 leading-relaxed mb-4">
               Hyderabad's leading food delivery platform connecting you with 500+ restaurants. 
               From local favorites to popular chains - discover, order, and enjoy the best food in the city.
@@ -31,9 +32,9 @@ export function Footer() {
               <li><a href="#menu" className="opacity-75 hover:opacity-100 transition-opacity">Popular Restaurants</a></li>
               <li><a href="#coverage" className="opacity-75 hover:opacity-100 transition-opacity">Delivery Areas</a></li>
               <li><a href="#contact" className="opacity-75 hover:opacity-100 transition-opacity">Contact Us</a></li>
-              <li><span className="opacity-75">Restaurant Partners</span></li>
-              <li><span className="opacity-75">Privacy Policy</span></li>
-              <li><span className="opacity-75">Terms of Service</span></li>
+              <li><Link to="/restaurant-partners" className="opacity-75 hover:opacity-100 transition-opacity">Restaurant Partners</Link></li>
+              <li><Link to="/privacy-policy" className="opacity-75 hover:opacity-100 transition-opacity">Privacy Policy</Link></li>
+              <li><Link to="/terms-of-service" className="opacity-75 hover:opacity-100 transition-opacity">Terms of Service</Link></li>
             </ul>
           </div>
 
@@ -72,7 +73,7 @@ export function Footer() {
               <span>•</span>
               <span>partners@swadoos.com</span>
               <span>•</span>
-              <span>+91 9876543210</span>
+              <span>+91 9121642407</span>
             </div>
           </div>
         </div>
