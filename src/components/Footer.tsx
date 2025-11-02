@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import swadoosLogo from "@/assets/swadoos-logo.png";
+import swadoosLogo from "@/assets/swadoos-logo-transparent.png";
 
 export function Footer() {
   return (

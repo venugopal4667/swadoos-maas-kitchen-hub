@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Smartphone, PlayCircle, Store, Users, Clock } from "lucide-react";
 import platformHero from "@/assets/platform-hero.jpg";
-import swadoosLogo from "@/assets/swadoos-logo.png";
+import swadoosLogo from "@/assets/swadoos-logo-transparent.png";
 import bannerCloudKitchen from "@/assets/banner-cloud-kitchen.jpg";
 import bannerHomemadeThali from "@/assets/banner-homemade-thali.jpg";
 import bannerFreshIngredients from "@/assets/banner-fresh-ingredients.jpg";
