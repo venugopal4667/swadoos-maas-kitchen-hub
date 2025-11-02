@@ -1,4 +1,6 @@
 import { CheckCircle, Leaf, Clock, Heart, Package, Ban } from "lucide-react";
+import swadoosLogoFull from "@/assets/swadoos-logo-full.png";
+import homemadeFoodBg from "@/assets/homemade-food-bg.jpg";
 
 export function WhyDifferentSection() {
   const differences = [
@@ -118,14 +120,34 @@ export function WhyDifferentSection() {
           ))}
         </div>
 
-        {/* Call to Action */}
-        <div className="text-center mt-16">
-          <p className="text-xl text-foreground font-semibold mb-4">
-            With Swadoos, you don't have to compromise on health for taste.
-          </p>
-          <p className="text-lg text-muted-foreground">
-            Order fresh, eat healthy, and feel the love of homemade food… every single time.
-          </p>
+        {/* Call to Action with Background */}
+        <div className="relative mt-16 rounded-2xl overflow-hidden shadow-glow">
+          {/* Background Image with Overlay */}
+          <div className="absolute inset-0">
+            <img 
+              src={homemadeFoodBg} 
+              alt="Fresh homemade food ingredients and spices" 
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-background/85" />
+          </div>
+          
+          {/* Content */}
+          <div className="relative z-10 text-center py-16 px-6">
+            <div className="flex justify-center mb-8">
+              <img 
+                src={swadoosLogoFull} 
+                alt="Swadoos - Directly from Maa's Kitchen" 
+                className="h-32 md:h-40 w-auto animate-float"
+              />
+            </div>
+            <p className="text-xl md:text-2xl text-foreground font-semibold mb-4 max-w-3xl mx-auto">
+              With Swadoos, you don't have to compromise on health for taste.
+            </p>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Order fresh, eat healthy, and feel the love of homemade food… every single time.
+            </p>
+          </div>
         </div>
       </div>
     </section>
