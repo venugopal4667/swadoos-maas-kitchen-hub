@@ -58,7 +58,9 @@ export function HeroSection() {
       {/* Navigation */}
       <nav className="relative z-10 flex items-center justify-between p-6 max-w-7xl mx-auto">
         <div className="flex items-center space-x-3">
-          <img src={swadoosLogo} alt="Swadoos Food Delivery Platform Logo" className="h-12 w-12 animate-float" />
+          <div className="p-2 rounded-xl bg-background/70 backdrop-blur supports-[backdrop-filter]:backdrop-blur-sm shadow-glow">
+            <img src={swadoosLogo} alt="Swadoos Food Delivery Platform Logo" className="h-12 w-12 animate-float" />
+          </div>
           <div>
             <h1 className="text-2xl font-bold text-foreground">Swadoos</h1>
             <p className="text-sm text-muted-foreground">Your Favorite Restaurants</p>

@@ -9,7 +9,9 @@ export function Footer() {
           {/* Brand Section */}
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center space-x-3 mb-4">
-              <img src={swadoosLogo} alt="Swadoos Food Delivery Platform Logo" className="h-10 w-10" />
+              <span className="p-2 rounded-lg bg-background/80 backdrop-blur supports-[backdrop-filter]:backdrop-blur-sm shadow-glow">
+                <img src={swadoosLogo} alt="Swadoos Food Delivery Platform Logo" className="h-10 w-10" />
+              </span>
               <div>
                 <h3 className="text-xl font-bold">Swadoos</h3>
                 <p className="text-sm opacity-75">Your Favorite Restaurants</p>
