@@ -1,5 +1,5 @@
 import { CheckCircle, Leaf, Clock, Heart, Package, Ban } from "lucide-react";
-import swadoosLogoFull from "@/assets/swadoos-logo-full.png";
+import swadoosLogoFull from "@/assets/swadoos-logo-transparent.png";
 import homemadeFoodBg from "@/assets/homemade-food-bg.jpg";
 
 export function WhyDifferentSection() {
