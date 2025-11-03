@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { WhyDifferentSection } from "@/components/WhyDifferentSection";
+import { RestaurantsSection } from "@/components/RestaurantsSection";
 import { MenuHighlights } from "@/components/MenuHighlights";
 import { CoverageSection } from "@/components/CoverageSection";
 import { ContactSection } from "@/components/ContactSection";
@@ -20,6 +21,11 @@ const Index = () => {
       {/* Why Different Section */}
       <section id="why-different">
         <WhyDifferentSection />
+      </section>
+
+      {/* Restaurants Section */}
+      <section id="restaurants">
+        <RestaurantsSection />
       </section>
 
       {/* Menu Highlights */}
