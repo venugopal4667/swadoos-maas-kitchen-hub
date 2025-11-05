@@ -23,10 +23,12 @@ export function RestaurantsSection() {
               className="group bg-card rounded-2xl overflow-hidden shadow-soft hover:shadow-glow transition-smooth animate-fade-in"
               style={{ animationDelay: `${index * 50}ms` }}
             >
-              <div className="relative overflow-hidden bg-gradient-to-br from-primary/10 to-primary/5 h-48 flex items-center justify-center">
-                <span className="text-7xl group-hover:scale-110 transition-transform duration-500">
-                  {restaurant.emoji}
-                </span>
+              <div className="relative overflow-hidden h-48">
+                <img 
+                  src={restaurant.image} 
+                  alt={restaurant.name}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
                 <div className="absolute top-3 right-3 bg-background/90 backdrop-blur-sm rounded-full p-2">
                   <ChefHat className="w-4 h-4 text-primary" />
                 </div>

@@ -1,3 +1,14 @@
+import swadoosRasoiImg from "@/assets/restaurant-swadoos-rasoi.jpg";
+import gharkaZaikaImg from "@/assets/restaurant-gharkazaika.jpg";
+import ammasKitchenImg from "@/assets/restaurant-ammas-kitchen.jpg";
+import zaikaGharanaImg from "@/assets/restaurant-zaika-gharana.jpg";
+import rasodaTalesImg from "@/assets/restaurant-rasoda-tales.jpg";
+import swadSutraImg from "@/assets/restaurant-swad-sutra.jpg";
+import mittiKiRasoiImg from "@/assets/restaurant-mitti-ki-rasoi.jpg";
+import gharSeKhaanaImg from "@/assets/restaurant-gharsekhaana.jpg";
+import nanisRasoiImg from "@/assets/restaurant-nanis-rasoi.jpg";
+import tadkaTalesImg from "@/assets/restaurant-tadka-tales.jpg";
+
 export interface MenuItem {
   name: string;
   price: number;
@@ -19,7 +30,7 @@ export const restaurants: Restaurant[] = [
     name: "Swadoos Rasoi",
     emoji: "🏠",
     description: "Balanced mix of traditional home-style dishes",
-    image: "/placeholder.svg",
+    image: swadoosRasoiImg,
     menu: [
       { name: "Millet Upma", price: 60 },
       { name: "Tomato Bath Rice", price: 80 },
@@ -38,7 +49,7 @@ export const restaurants: Restaurant[] = [
     name: "GharKaZaika",
     emoji: "🍛",
     description: "Simple homemade comfort meals",
-    image: "/placeholder.svg",
+    image: gharkaZaikaImg,
     menu: [
       { name: "Dal Rice", price: 90 },
       { name: "Sambar Rice", price: 95 },
@@ -57,7 +68,7 @@ export const restaurants: Restaurant[] = [
     name: "Amma's Kitchen",
     emoji: "🍗",
     description: "Traditional homely dishes — both veg & non-veg",
-    image: "/placeholder.svg",
+    image: ammasKitchenImg,
     menu: [
       { name: "Chicken Pulao", price: 180 },
       { name: "Mutton Gongura", price: 250 },
@@ -76,7 +87,7 @@ export const restaurants: Restaurant[] = [
     name: "Zaika Gharana",
     emoji: "🍲",
     description: "Rich, flavorful, traditional dishes",
-    image: "/placeholder.svg",
+    image: zaikaGharanaImg,
     menu: [
       { name: "Chicken Pulao", price: 180 },
       { name: "Mutton Gongura", price: 250 },
@@ -95,7 +106,7 @@ export const restaurants: Restaurant[] = [
     name: "Rasoda Tales",
     emoji: "🫕",
     description: "Vegetarian specialties with homely touch",
-    image: "/placeholder.svg",
+    image: rasodaTalesImg,
     menu: [
       { name: "Millet Upma", price: 60 },
       { name: "Tomato Bath Rice", price: 80 },
@@ -114,7 +125,7 @@ export const restaurants: Restaurant[] = [
     name: "Swad Sutra",
     emoji: "🍢",
     description: "Signature mix of veg comfort dishes",
-    image: "/placeholder.svg",
+    image: swadSutraImg,
     menu: [
       { name: "Millet Upma", price: 60 },
       { name: "Dal Rice", price: 90 },
@@ -133,7 +144,7 @@ export const restaurants: Restaurant[] = [
     name: "Mitti Ki Rasoi",
     emoji: "🍚",
     description: "Earthy, traditional Andhra-style flavors",
-    image: "/placeholder.svg",
+    image: mittiKiRasoiImg,
     menu: [
       { name: "Mutton Gongura", price: 250 },
       { name: "Chicken Pulao", price: 180 },
@@ -152,7 +163,7 @@ export const restaurants: Restaurant[] = [
     name: "GharSeKhaana",
     emoji: "🍛",
     description: "Comforting all-day meals — vegetarian focus",
-    image: "/placeholder.svg",
+    image: gharSeKhaanaImg,
     menu: [
       { name: "Millet Upma", price: 60 },
       { name: "Tomato Bath Rice", price: 80 },
@@ -171,7 +182,7 @@ export const restaurants: Restaurant[] = [
     name: "Nani's Rasoi",
     emoji: "🧆",
     description: "Old-fashioned, soul-touching home meals",
-    image: "/placeholder.svg",
+    image: nanisRasoiImg,
     menu: [
       { name: "Chicken Pulao", price: 180 },
       { name: "Mutton Gongura", price: 250 },
@@ -190,7 +201,7 @@ export const restaurants: Restaurant[] = [
     name: "Tadka Tales",
     emoji: "🥘",
     description: "Fusion of spicy, flavorful dishes",
-    image: "/placeholder.svg",
+    image: tadkaTalesImg,
     menu: [
       { name: "Chicken Pulao", price: 180 },
       { name: "Prawns Fry", price: 280 },
