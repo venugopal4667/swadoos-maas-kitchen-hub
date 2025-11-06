@@ -1,11 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Star, IndianRupee, Clock } from "lucide-react";
-import biryaniImg from "@/assets/biryani.jpg";
-import pizzaImg from "@/assets/restaurant-pizza.jpg";
-import chineseImg from "@/assets/restaurant-chinese.jpg";
-import burgerImg from "@/assets/restaurant-burger.jpg";
-import sushiImg from "@/assets/restaurant-sushi.jpg";
-import thaliImg from "@/assets/thali.jpg";
+import upmaImg from "@/assets/menu-item-upma.jpg";
+import dalRiceImg from "@/assets/menu-item-dal-rice.jpg";
+import chickenPulaoImg from "@/assets/menu-item-chicken-pulao.jpg";
+import sambarRiceImg from "@/assets/menu-item-sambar-rice.jpg";
+import lemonRiceImg from "@/assets/menu-item-lemon-rice.jpg";
+import muttonGonguraImg from "@/assets/menu-item-mutton-gongura.jpg";
+import dosaImg from "@/assets/menu-item-dosa.jpg";
+import fishCurryImg from "@/assets/menu-item-fish-curry.jpg";
+import prawnsFryImg from "@/assets/menu-item-prawns-fry.jpg";
 
 interface MenuItem {
   name: string;
@@ -21,66 +24,96 @@ interface MenuItem {
 
 const menuItems: MenuItem[] = [
   {
-    name: "Hyderabadi Biryani",
-    restaurant: "Bawarchi Restaurant",
-    description: "Aromatic basmati rice with tender mutton, cooked in traditional dum style",
-    image: biryaniImg,
-    price: 280,
-    rating: 4.8,
-    deliveryTime: "35-40 min",
-    cuisine: "Indian",
+    name: "Millet Upma",
+    restaurant: "Swadoos Rasoi",
+    description: "Nutritious South Indian breakfast with roasted millet, curry leaves, and cashews",
+    image: upmaImg,
+    price: 60,
+    rating: 4.6,
+    deliveryTime: "20-25 min",
+    cuisine: "South Indian",
+  },
+  {
+    name: "Dal Rice",
+    restaurant: "GharKaZaika",
+    description: "Comforting yellow dal with steamed basmati rice, tempered with ghee and spices",
+    image: dalRiceImg,
+    price: 90,
+    rating: 4.7,
+    deliveryTime: "25-30 min",
+    cuisine: "Homestyle",
     isSpecial: true,
   },
   {
-    name: "Margherita Pizza",
-    restaurant: "Pizza Corner",
-    description: "Wood-fired pizza with fresh mozzarella, basil, and authentic tomato sauce",
-    image: pizzaImg,
-    price: 320,
-    rating: 4.6,
-    deliveryTime: "25-30 min",
-    cuisine: "Italian",
-  },
-  {
-    name: "Vegetable Fried Rice",
-    restaurant: "Dragon Express",
-    description: "Wok-tossed rice with fresh vegetables and authentic Chinese flavors",
-    image: chineseImg,
+    name: "Chicken Pulao",
+    restaurant: "Amma's Kitchen",
+    description: "Aromatic basmati rice with tender chicken pieces, spices, and fresh herbs",
+    image: chickenPulaoImg,
     price: 180,
-    rating: 4.4,
-    deliveryTime: "20-25 min",
-    cuisine: "Chinese",
+    rating: 4.8,
+    deliveryTime: "30-35 min",
+    cuisine: "Andhra",
   },
   {
-    name: "Classic Burger",
-    restaurant: "Burger Hub",
-    description: "Juicy beef patty with lettuce, tomato, cheese, and crispy fries",
-    image: burgerImg,
-    price: 250,
+    name: "Sambar Rice",
+    restaurant: "Rasoda Tales",
+    description: "Traditional South Indian comfort meal with tangy sambar and steamed rice",
+    image: sambarRiceImg,
+    price: 95,
     rating: 4.5,
-    deliveryTime: "15-20 min",
-    cuisine: "American",
+    deliveryTime: "20-25 min",
+    cuisine: "South Indian",
   },
   {
-    name: "Sushi Platter",
-    restaurant: "Tokyo Kitchen",
-    description: "Fresh assorted sushi rolls and nigiri with wasabi and pickled ginger",
-    image: sushiImg,
-    price: 450,
+    name: "Lemon Rice",
+    restaurant: "Swad Sutra",
+    description: "Tangy and flavorful rice with fresh lemon juice, peanuts, and curry leaves",
+    image: lemonRiceImg,
+    price: 70,
+    rating: 4.4,
+    deliveryTime: "15-20 min",
+    cuisine: "South Indian",
+  },
+  {
+    name: "Mutton Gongura",
+    restaurant: "Mitti Ki Rasoi",
+    description: "Authentic Andhra specialty with tender mutton in tangy gongura leaves gravy",
+    image: muttonGonguraImg,
+    price: 250,
+    rating: 4.9,
+    deliveryTime: "35-40 min",
+    cuisine: "Andhra",
+    isSpecial: true,
+  },
+  {
+    name: "Crispy Dosa",
+    restaurant: "GharSeKhaana",
+    description: "Golden brown rice and lentil crepe served with coconut chutney and sambar",
+    image: dosaImg,
+    price: 60,
+    rating: 4.6,
+    deliveryTime: "20-25 min",
+    cuisine: "South Indian",
+  },
+  {
+    name: "Fish Curry",
+    restaurant: "Nani's Rasoi",
+    description: "Fresh fish cooked in rich red curry with traditional coastal spices",
+    image: fishCurryImg,
+    price: 200,
     rating: 4.7,
     deliveryTime: "30-35 min",
-    cuisine: "Japanese",
-    isSpecial: true,
+    cuisine: "Coastal",
   },
   {
-    name: "Complete Thali",
-    restaurant: "Maa's Kitchen",
-    description: "Traditional Indian thali with dal, sabzi, rice, rotis, and accompaniments",
-    image: thaliImg,
-    price: 180,
-    rating: 4.9,
+    name: "Prawns Fry",
+    restaurant: "Tadka Tales",
+    description: "Crispy fried prawns marinated in spices, garnished with curry leaves",
+    image: prawnsFryImg,
+    price: 280,
+    rating: 4.8,
     deliveryTime: "25-30 min",
-    cuisine: "Indian",
+    cuisine: "Coastal",
   },
 ];
 
@@ -90,10 +123,10 @@ export function MenuHighlights() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Popular <span className="bg-gradient-primary bg-clip-text text-transparent">Dishes & Restaurants</span>
+            Featured <span className="bg-gradient-primary bg-clip-text text-transparent">Homemade Dishes</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            From local favorites to international cuisines - discover the most loved dishes across our partner restaurants
+            Authentic homemade food from our cloud kitchens - prepared fresh with love and traditional recipes
           </p>
         </div>
 

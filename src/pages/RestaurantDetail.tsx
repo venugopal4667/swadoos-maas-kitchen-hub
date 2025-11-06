@@ -3,6 +3,7 @@ import { restaurants } from "@/data/restaurants";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
 import { ArrowLeft, IndianRupee, ChefHat, Star } from "lucide-react";
+import bannerImg from "@/assets/restaurant-banner.jpg";
 import {
   Table,
   TableBody,
@@ -41,34 +42,47 @@ export default function RestaurantDetail() {
         </div>
       </header>
 
-      {/* Restaurant Hero */}
-      <section className="relative py-20 px-6 bg-gradient-to-br from-primary/10 via-primary/5 to-background">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="relative">
-              <div className="w-48 h-48 rounded-3xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center shadow-glow">
-                <span className="text-9xl">{restaurant.emoji}</span>
-              </div>
-              <div className="absolute -top-2 -right-2 bg-primary text-primary-foreground rounded-full p-3 shadow-glow">
-                <ChefHat className="w-6 h-6" />
-              </div>
-            </div>
+      {/* Restaurant Hero with Banner */}
+      <section className="relative">
+        {/* Banner Image */}
+        <div className="relative h-[400px] overflow-hidden">
+          <img 
+            src={bannerImg} 
+            alt="Restaurant banner"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background"></div>
+        </div>
 
-            <div className="flex-1 text-center md:text-left">
-              <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
-                {restaurant.name}
-              </h1>
-              <p className="text-xl text-muted-foreground mb-6">
-                {restaurant.description}
-              </p>
-              <div className="flex items-center gap-6 justify-center md:justify-start">
-                <div className="flex items-center gap-2">
-                  <Star className="w-5 h-5 text-yellow-500 fill-current" />
-                  <span className="font-semibold text-foreground">4.5</span>
-                  <span className="text-sm text-muted-foreground">(200+ ratings)</span>
+        {/* Restaurant Info Overlay */}
+        <div className="relative -mt-32 px-6 pb-20">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="relative">
+                <div className="w-48 h-48 rounded-3xl bg-card border-4 border-background flex items-center justify-center shadow-glow">
+                  <span className="text-9xl">{restaurant.emoji}</span>
                 </div>
-                <div className="text-sm text-muted-foreground">
-                  {restaurant.menu.length} Menu Items
+                <div className="absolute -top-2 -right-2 bg-primary text-primary-foreground rounded-full p-3 shadow-glow">
+                  <ChefHat className="w-6 h-6" />
+                </div>
+              </div>
+
+              <div className="flex-1 text-center md:text-left">
+                <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
+                  {restaurant.name}
+                </h1>
+                <p className="text-xl text-muted-foreground mb-6">
+                  {restaurant.description}
+                </p>
+                <div className="flex items-center gap-6 justify-center md:justify-start">
+                  <div className="flex items-center gap-2">
+                    <Star className="w-5 h-5 text-yellow-500 fill-current" />
+                    <span className="font-semibold text-foreground">4.5</span>
+                    <span className="text-sm text-muted-foreground">(200+ ratings)</span>
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    {restaurant.menu.length} Menu Items
+                  </div>
                 </div>
               </div>
             </div>
