@@ -102,34 +102,37 @@ export default function RestaurantDetail() {
             </p>
           </div>
 
-          <div className="bg-card rounded-2xl shadow-soft overflow-hidden">
-            <Table>
-              <TableHeader>
-                <TableRow className="bg-muted/50">
-                  <TableHead className="w-[50px]">#</TableHead>
-                  <TableHead>Dish Name</TableHead>
-                  <TableHead className="text-right">Price</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {restaurant.menu.map((item, index) => (
-                  <TableRow key={index} className="hover:bg-muted/30 transition-colors">
-                    <TableCell className="font-medium text-muted-foreground">
-                      {index + 1}
-                    </TableCell>
-                    <TableCell className="font-medium text-foreground">
-                      {item.name}
-                    </TableCell>
-                    <TableCell className="text-right">
-                      <div className="flex items-center justify-end gap-1 font-semibold text-foreground">
-                        <IndianRupee className="w-4 h-4" />
-                        <span>{item.price}</span>
-                      </div>
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {restaurant.menu.map((item, index) => (
+              <div 
+                key={index}
+                className="bg-card rounded-2xl overflow-hidden shadow-soft hover:shadow-glow transition-smooth animate-fade-in"
+                style={{ animationDelay: `${index * 50}ms` }}
+              >
+                <div className="relative overflow-hidden h-48">
+                  <img 
+                    src={item.image} 
+                    alt={item.name}
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                
+                <div className="p-4">
+                  <h3 className="text-lg font-bold text-foreground mb-3">
+                    {item.name}
+                  </h3>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-1 text-foreground font-bold text-xl">
+                      <IndianRupee className="w-5 h-5" />
+                      <span>{item.price}</span>
+                    </div>
+                    <span className="text-xs text-muted-foreground bg-muted px-3 py-1 rounded-full">
+                      #{index + 1}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
 
           <div className="mt-12 text-center bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-12">
