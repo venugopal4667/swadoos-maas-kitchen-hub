@@ -2,7 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import { restaurants } from "@/data/restaurants";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
-import { ArrowLeft, IndianRupee, ChefHat, Star } from "lucide-react";
+import { ArrowLeft, IndianRupee, Store, Star } from "lucide-react";
 import bannerImg from "@/assets/restaurant-banner.jpg";
 import {
   Table,
@@ -63,7 +63,7 @@ export default function RestaurantDetail() {
                   <span className="text-9xl">{restaurant.emoji}</span>
                 </div>
                 <div className="absolute -top-2 -right-2 bg-primary text-primary-foreground rounded-full p-3 shadow-glow">
-                  <ChefHat className="w-6 h-6" />
+                  <Store className="w-6 h-6" />
                 </div>
               </div>
 
