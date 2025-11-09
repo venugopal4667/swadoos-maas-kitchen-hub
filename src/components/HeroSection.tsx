@@ -91,7 +91,7 @@ export function HeroSection() {
                     alt={banner.alt}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-background/98 via-background/85 to-background/40 flex items-center">
+                  <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-background/20 flex items-center">
                     <div className="px-8 md:px-16 max-w-2xl">
                       <h3 className="text-3xl md:text-5xl font-bold text-primary mb-3 animate-fade-in">
                         {banner.title}
