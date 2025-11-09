@@ -96,7 +96,7 @@ export function HeroSection() {
                       <h3 className="text-3xl md:text-5xl font-bold text-primary mb-3 animate-fade-in">
                         {banner.title}
                       </h3>
-                      <p className="text-lg md:text-xl text-accent-foreground animate-fade-in [animation-delay:200ms]">
+                      <p className="text-lg md:text-xl text-foreground font-semibold animate-fade-in [animation-delay:200ms]">
                         {banner.subtitle}
                       </p>
                     </div>
