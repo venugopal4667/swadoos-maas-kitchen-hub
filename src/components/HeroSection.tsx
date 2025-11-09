@@ -91,16 +91,14 @@ export function HeroSection() {
                     alt={banner.alt}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-background/20 flex items-center">
+                  <div className="absolute inset-0 bg-gradient-to-r from-background/98 via-background/85 to-background/40 flex items-center">
                     <div className="px-8 md:px-16 max-w-2xl">
-                      <div className="bg-background/80 supports-[backdrop-filter]:backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-glow ring-1 ring-border/40">
-                        <h3 className="text-3xl md:text-5xl font-bold text-foreground mb-3 animate-fade-in">
-                          {banner.title}
-                        </h3>
-                        <p className="text-lg md:text-xl text-foreground animate-fade-in [animation-delay:200ms]">
-                          {banner.subtitle}
-                        </p>
-                      </div>
+                      <h3 className="text-3xl md:text-5xl font-bold text-foreground mb-3 animate-fade-in">
+                        {banner.title}
+                      </h3>
+                      <p className="text-lg md:text-xl text-foreground animate-fade-in [animation-delay:200ms]">
+                        {banner.subtitle}
+                      </p>
                     </div>
                   </div>
                 </div>
