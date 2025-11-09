@@ -93,10 +93,10 @@ export function HeroSection() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-background/98 via-background/85 to-background/40 flex items-center">
                     <div className="px-8 md:px-16 max-w-2xl">
-                      <h3 className="text-3xl md:text-5xl font-bold text-foreground mb-3 animate-fade-in">
+                      <h3 className="text-3xl md:text-5xl font-bold text-primary mb-3 animate-fade-in">
                         {banner.title}
                       </h3>
-                      <p className="text-lg md:text-xl text-foreground animate-fade-in [animation-delay:200ms]">
+                      <p className="text-lg md:text-xl text-accent-foreground animate-fade-in [animation-delay:200ms]">
                         {banner.subtitle}
                       </p>
                     </div>
