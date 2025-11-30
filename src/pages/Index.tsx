@@ -6,10 +6,12 @@ import { MenuHighlights } from "@/components/MenuHighlights";
 import { CoverageSection } from "@/components/CoverageSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
+import { WelcomePopup } from "@/components/WelcomePopup";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <WelcomePopup />
       {/* Hero Section */}
       <HeroSection />
 
