@@ -48,10 +48,10 @@ export const WelcomePopup = () => {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogContent className="max-w-4xl p-0 overflow-hidden border-0 rounded-2xl max-h-[85vh] sm:max-h-[90vh]">
+      <DialogContent className="max-w-4xl p-0 border-0 rounded-2xl max-h-[90vh] overflow-y-auto">
         {!selectedType ? (
           // Selection Screen
-          <div className="p-6 sm:p-8">
+          <div className="p-6 sm:p-8 overflow-y-auto">
             <div className="text-center mb-6">
               <h2 className="text-2xl sm:text-3xl font-bold text-primary mb-2">
                 Welcome to Swadoos! 🍽️
@@ -110,25 +110,25 @@ export const WelcomePopup = () => {
             </div>
           </div>
         ) : selectedType === "chef" ? (
-          // Chef Content
-          <div className="flex flex-col md:flex-row md:min-h-[500px]">
-            {/* Image Side */}
+          // Chef Content - Scrollable on mobile
+          <div className="flex flex-col md:flex-row md:min-h-[500px] overflow-y-auto">
+            {/* Image Side - Fixed height on mobile */}
             <div className="md:w-1/2 relative flex-shrink-0">
               <img 
                 src={chefBanner} 
                 alt="Home chef cooking" 
-                className="w-full h-56 md:h-full object-cover"
+                className="w-full h-40 sm:h-48 md:h-full object-cover"
               />
               <button 
                 onClick={handleBack}
-                className="absolute top-4 left-4 p-2 rounded-full bg-background/90 hover:bg-background transition-colors shadow-lg"
+                className="absolute top-4 left-4 p-2 rounded-full bg-background/90 hover:bg-background transition-colors shadow-lg z-10"
               >
                 <ArrowLeft className="h-5 w-5" />
               </button>
             </div>
             
-            {/* Content Side */}
-            <div className="md:w-1/2 p-5 sm:p-6 flex flex-col justify-center overflow-y-auto max-h-[60vh] md:max-h-none">
+            {/* Content Side - Scrollable */}
+            <div className="md:w-1/2 p-5 sm:p-6 flex flex-col">
               <div className="flex items-center gap-2 mb-3">
                 <Heart className="h-5 w-5 text-red-500 fill-red-500" />
                 <span className="text-xs font-semibold text-primary uppercase tracking-wide">For Chefs & Home Cooks</span>
@@ -156,32 +156,32 @@ export const WelcomePopup = () => {
                 <p className="text-muted-foreground text-xs">Turn your kitchen into a thriving brand.</p>
               </div>
               
-              <Button className="w-full h-11 font-semibold" onClick={handleClose}>
+              <Button className="w-full h-11 font-semibold mt-auto" onClick={handleClose}>
                 <ChefHat className="mr-2 h-4 w-4" />
                 Start Your Journey
               </Button>
             </div>
           </div>
         ) : (
-          // Customer Content
-          <div className="flex flex-col md:flex-row md:min-h-[500px]">
-            {/* Image Side */}
+          // Customer Content - Scrollable on mobile
+          <div className="flex flex-col md:flex-row md:min-h-[500px] overflow-y-auto">
+            {/* Image Side - Fixed height on mobile */}
             <div className="md:w-1/2 relative flex-shrink-0">
               <img 
                 src={customerBanner} 
                 alt="Happy customers enjoying food" 
-                className="w-full h-56 md:h-full object-cover"
+                className="w-full h-40 sm:h-48 md:h-full object-cover"
               />
               <button 
                 onClick={handleBack}
-                className="absolute top-4 left-4 p-2 rounded-full bg-background/90 hover:bg-background transition-colors shadow-lg"
+                className="absolute top-4 left-4 p-2 rounded-full bg-background/90 hover:bg-background transition-colors shadow-lg z-10"
               >
                 <ArrowLeft className="h-5 w-5" />
               </button>
             </div>
             
-            {/* Content Side */}
-            <div className="md:w-1/2 p-5 sm:p-6 flex flex-col justify-center overflow-y-auto max-h-[60vh] md:max-h-none">
+            {/* Content Side - Scrollable */}
+            <div className="md:w-1/2 p-5 sm:p-6 flex flex-col">
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-lg">🍽️</span>
                 <span className="text-xs font-semibold text-primary uppercase tracking-wide">For Food Lovers</span>
@@ -211,7 +211,7 @@ export const WelcomePopup = () => {
                 </p>
               </div>
               
-              <Button className="w-full h-11 font-semibold" onClick={handleClose}>
+              <Button className="w-full h-11 font-semibold mt-auto" onClick={handleClose}>
                 <UtensilsCrossed className="mr-2 h-4 w-4" />
                 Explore Homemade Food
               </Button>
