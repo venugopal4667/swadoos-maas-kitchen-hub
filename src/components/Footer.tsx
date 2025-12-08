@@ -3,7 +3,7 @@ import swadoosLogo from "@/assets/swadoos-logo-transparent.png";
 
 export function Footer() {
   return (
-    <footer className="bg-foreground text-background py-12 pb-16 px-6">
+    <footer className="bg-foreground text-background py-12 pb-24 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand Section */}
