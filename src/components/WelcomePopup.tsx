@@ -48,7 +48,7 @@ export const WelcomePopup = () => {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogContent className="max-w-4xl p-0 overflow-hidden border-0 rounded-2xl">
+      <DialogContent className="max-w-4xl p-0 overflow-hidden border-0 rounded-2xl max-h-[85vh] sm:max-h-[90vh]">
         {!selectedType ? (
           // Selection Screen
           <div className="p-6 sm:p-8">
@@ -111,7 +111,7 @@ export const WelcomePopup = () => {
           </div>
         ) : selectedType === "chef" ? (
           // Chef Content
-          <div className="flex flex-col md:flex-row min-h-[500px]">
+          <div className="flex flex-col md:flex-row md:min-h-[500px]">
             {/* Image Side */}
             <div className="md:w-1/2 relative flex-shrink-0">
               <img 
@@ -164,7 +164,7 @@ export const WelcomePopup = () => {
           </div>
         ) : (
           // Customer Content
-          <div className="flex flex-col md:flex-row min-h-[500px]">
+          <div className="flex flex-col md:flex-row md:min-h-[500px]">
             {/* Image Side */}
             <div className="md:w-1/2 relative flex-shrink-0">
               <img 
