@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { ChefHat, UtensilsCrossed, Heart, ArrowLeft, Users, Clock, Wallet, Headphones, Home, Leaf, Sparkles, Truck } from "lucide-react";
@@ -8,6 +9,7 @@ import customerBanner from "@/assets/popup-customer-banner.jpg";
 type UserType = "customer" | "chef" | null;
 
 export const WelcomePopup = () => {
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const [selectedType, setSelectedType] = useState<UserType>(null);
 
@@ -156,9 +158,12 @@ export const WelcomePopup = () => {
                 <p className="text-muted-foreground text-xs">Turn your kitchen into a thriving brand.</p>
               </div>
               
-              <Button className="w-full h-11 font-semibold mt-auto" onClick={handleClose}>
+              <Button className="w-full h-11 font-semibold mt-auto" onClick={() => {
+                handleClose();
+                navigate("/chef-registration");
+              }}>
                 <ChefHat className="mr-2 h-4 w-4" />
-                Start Your Journey
+                Register as Chef
               </Button>
             </div>
           </div>

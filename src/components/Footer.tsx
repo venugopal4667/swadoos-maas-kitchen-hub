@@ -35,6 +35,7 @@ export function Footer() {
               <li><a href="#coverage" className="opacity-75 hover:opacity-100 transition-opacity">Delivery Areas</a></li>
               <li><a href="#contact" className="opacity-75 hover:opacity-100 transition-opacity">Contact Us</a></li>
               <li><Link to="/restaurant-partners" className="opacity-75 hover:opacity-100 transition-opacity">Restaurant Partners</Link></li>
+              <li><Link to="/chef-registration" className="opacity-75 hover:opacity-100 transition-opacity">Become a Chef Partner</Link></li>
               <li><Link to="/privacy-policy" className="opacity-75 hover:opacity-100 transition-opacity">Privacy Policy</Link></li>
               <li><Link to="/terms-of-service" className="opacity-75 hover:opacity-100 transition-opacity">Terms of Service</Link></li>
             </ul>
