@@ -30,7 +30,7 @@ import popupChefBanner from "@/assets/popup-chef-banner.jpg";
 const chefFormSchema = z.object({
   fullName: z.string().min(2, "Name must be at least 2 characters").max(100),
   phone: z.string().regex(/^[6-9]\d{9}$/, "Enter a valid 10-digit Indian mobile number"),
-  email: z.string().email("Enter a valid email address").max(255),
+  email: z.string().email("Enter a valid email address").max(255).optional().or(z.literal("")),
   kitchenName: z.string().min(2, "Kitchen name must be at least 2 characters").max(100),
   address: z.string().min(10, "Please provide a complete address").max(500),
   area: z.string().min(1, "Please select your area"),
@@ -38,7 +38,7 @@ const chefFormSchema = z.object({
   experience: z.string().min(1, "Please select your experience level"),
   dailyCapacity: z.string().min(1, "Please select daily meal capacity"),
   about: z.string().min(20, "Tell us more about yourself (at least 20 characters)").max(1000),
-  fssaiLicense: z.boolean().default(false),
+  fssaiNumber: z.string().max(14, "FSSAI number must be 14 digits").optional().or(z.literal("")),
   termsAccepted: z.boolean().refine((val) => val === true, "You must accept the terms"),
 });
 
@@ -98,7 +98,7 @@ export default function ChefRegistration() {
       experience: "",
       dailyCapacity: "",
       about: "",
-      fssaiLicense: false,
+      fssaiNumber: "",
       termsAccepted: false,
     },
   });
@@ -255,9 +255,9 @@ export default function ChefRegistration() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Email Address *</FormLabel>
+                      <FormLabel>Email Address</FormLabel>
                       <FormControl>
-                        <Input type="email" placeholder="you@example.com" {...field} />
+                        <Input type="email" placeholder="you@example.com (optional)" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -441,23 +441,17 @@ export default function ChefRegistration() {
             <div className="space-y-4 pt-4 border-t border-border">
               <FormField
                 control={form.control}
-                name="fssaiLicense"
+                name="fssaiNumber"
                 render={({ field }) => (
-                  <FormItem className="flex flex-row items-start space-x-3 space-y-0">
+                  <FormItem>
+                    <FormLabel>FSSAI License Number</FormLabel>
                     <FormControl>
-                      <Checkbox
-                        checked={field.value}
-                        onCheckedChange={field.onChange}
-                      />
+                      <Input placeholder="14-digit FSSAI number (optional)" {...field} />
                     </FormControl>
-                    <div className="space-y-1 leading-none">
-                      <FormLabel className="font-normal">
-                        I have FSSAI License
-                      </FormLabel>
-                      <FormDescription>
-                        Optional, but helps build customer trust
-                      </FormDescription>
-                    </div>
+                    <FormDescription>
+                      Optional, but helps build customer trust
+                    </FormDescription>
+                    <FormMessage />
                   </FormItem>
                 )}
               />
