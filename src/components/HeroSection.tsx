@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Smartphone, PlayCircle, Store, Users, Clock } from "lucide-react";
+import { Smartphone, PlayCircle, Store, Users, Clock, ChefHat } from "lucide-react";
 import platformHero from "@/assets/platform-hero.jpg";
 import swadoosLogo from "@/assets/swadoos-logo-transparent.png";
 import bannerCloudKitchen from "@/assets/banner-cloud-kitchen.jpg";
@@ -66,6 +67,13 @@ export function HeroSection() {
             <p className="text-sm text-muted-foreground">Your Favorite Restaurants</p>
           </div>
         </div>
+        <Link 
+          to="/chef-registration" 
+          className="flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-colors shadow-md"
+        >
+          <ChefHat size={18} />
+          <span className="hidden sm:inline">Become a Chef</span>
+        </Link>
       </nav>
 
       {/* Hero Banners Carousel */}
